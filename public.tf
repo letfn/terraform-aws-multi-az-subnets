@@ -4,7 +4,7 @@ locals {
 }
 
 module "public_label" {
-  source     = "git::https://github.com/cloudposse/terraform-null-label.git?ref=tags/0.17.0"
+  source     = "../terraform-null-label"
   namespace  = var.namespace
   name       = var.name
   stage      = var.stage
